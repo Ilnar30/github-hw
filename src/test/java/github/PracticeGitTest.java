@@ -21,7 +21,7 @@ public class PracticeGitTest {
         // - Откройте страницу Selenide в Github
         open("https://github.com/");
         $("[placeholder='Search GitHub']").setValue("selenide").pressEnter();
-        $$("ul.repo-list li").first().$("a").click();
+        $("ul.repo-list li").$("a").click();
         // - Перейдите в раздел Wiki проекта
         $("#wiki-tab").click();
         // - Убедитесь, что в списке страниц (Pages) есть страница SoftAssertions
